@@ -82,6 +82,9 @@ let myCart = JSON.parse(localStorage.getItem("myCart")) || [];
         document.querySelector("tbody").append(row);
 
     })
+    document.getElementById("#proceedPayment").onclick = function changeContent(){
+        window.location.href = ""
+    }
 
     function dltFromCart(elem,index){
         localStorage.setItem("count", JSON.stringify(myCart));
