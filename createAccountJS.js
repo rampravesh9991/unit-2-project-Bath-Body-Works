@@ -1,4 +1,4 @@
-document.querySelector("#newAccount").addEventListener("click",createAccount);
+// document.querySelector("#newAccount").addEventListener("click",createAccount);
 let form = document.querySelector("form");
 let userData = JSON.parse(localStorage.getItem("userData")) || [];
 form.addEventListener("submit",function(event){
@@ -18,6 +18,11 @@ form.addEventListener("submit",function(event){
         alert("Account already Exists");
     }
 })
+document.querySelector("#createAcc").addEventListener("click",goToLogin)
+    function goToLogin(){
+        window.location.href = "signupPage.html";
+    }
+
 
 function checkEmails(email){
     let filtered = userData.filter(function(element){
@@ -30,6 +35,6 @@ function checkEmails(email){
     }
 }
 
-function createAccount(){
-    window.location.href = "createAccount.html";
-}
+// function createAccount(){
+//     window.location.href = "createAccount.html";
+// }

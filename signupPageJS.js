@@ -1,7 +1,7 @@
 let form = document.querySelector("form");
 let userData = JSON.parse(localStorage.getItem("userData")) || [];
 
-form.addEventListener("click", function(event){
+form.addEventListener("submit", function(event){
     event.preventDefault();
     let data ={
         email : form.email.value,
@@ -16,7 +16,10 @@ form.addEventListener("click", function(event){
         alert("Wrong username or password");
     }
 })
-
+document.querySelector("#createAcc").addEventListener("click",createAccount);
+function createAccount(){
+    window.location.href = "createAccount.html";
+}
 function checkSignIn(email, password){
     let filter = userData.filter(function(element){
         return element.email === email && element.password === password;

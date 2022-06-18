@@ -1,7 +1,7 @@
 let myCart = JSON.parse(localStorage.getItem("myCart")) || [];
     let quantity = JSON.parse(localStorage.getItem("count")) || [];
 
-    myCart.forEach(function(elem){
+    myCart.forEach(function(elem,index){
         //Item
         let row = document.createElement("tr");
         row.setAttribute("height","200px")
@@ -68,16 +68,31 @@ let myCart = JSON.parse(localStorage.getItem("myCart")) || [];
         box6.setAttribute("id","totalPrice");
         let totalPrice = document.createElement("h3")
         totalPrice.innerText = elem.price;
-        let remove = document.createElement("p");
-        remove.innerText = "X";
-        box6.append(totalPrice,remove);
+        let removeItem = document.createElement("p");
+        removeItem.innerText = "X";
+        removeItem.addEventListener("click",function(){
+            dltFromCart(elem,index);
+        })
+
+        box6.append(totalPrice,removeItem);
         td4.append(box6);
 
         //append all
         row.append(td1,td2,td3,td4);
         document.querySelector("tbody").append(row);
 
-    })
+    }) 
+    document.querySelector("#paymentBtn > button:last-child >h4").addEventListener("click",shipping);
+    function shipping(){
+        window.location.href = "shipping.html";
+    }
+
+    function dltFromCart(elem,index){
+        localStorage.setItem("count", JSON.stringify(myCart));
+        myCart.splice(index,1);
+        localStorage.setItem("myCart",JSON.stringify(myCart));
+        location.reload();
+    }    
 
     function funInc(elem){
         let jhola = {};
