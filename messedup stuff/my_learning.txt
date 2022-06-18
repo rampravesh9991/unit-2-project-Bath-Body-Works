@@ -5,9 +5,15 @@
 5. using flex property with grid property is still confusing for me
 6. i also learned that first try to copy the layout in divide and conquer.html and when it works paste it in original file
 in landing_p1.html while working with data, after doing grid display stuff i got sad.. why its still not working.. it because you also have to set image sizes
-i did not memorized the structure of table, also do not know how to style the tables.. i guess i have learned it now
-you cannot access local storage element of a different html file live if you are not connected to that file
-instead of using line-height = 0px [causes issues] use margin : negative value instead
+7. i did not memorized the structure of table, also do not know how to style the tables.. i guess i have learned it now
+8. you cannot access local storage element of a different html file live if you are not connected to that file
+9. instead of using line-height = 0px [causes issues] use margin : negative value instead
+10. now i know how to get back all deleted files or old version of files form github
+11. dont let anyone push code it main ~ rather do marging in main...[files could be manipulated if you ignore this]
+12. also learned where to find contributions
+13. most important your codes do not get transfered in main from branch it just update the main with your branch... [NEVER PUSH IN MAIN ONLY MERGE]
+14. i should thankful to my teammates for being lazy, because the thought that they are useless forced me to learn everything by myself. yes they are useful for my betterment 
+
 /* #bigSales > div:first-child{
             border: 1px solid navy;
             width: 20%;

@@ -14,6 +14,44 @@
   margin-top: 35px;
   display: block;
 }
+/* ram made changes */
+#look{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,50px);
+    margin-top: 20px;
+}
+/* #look > div{
+    border: 1px solid orange;
+} */
+#look > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#look > div:nth-child(2) > img{
+    width: 80%;
+    height: 70%;
+}
+#look > div:last-child {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 40px;
+}
+#look > div:last-child > div{
+    /* border: 1px solid green; */
+    width: 7%;
+    height: 60%;
+}
+#look > div:last-child > div >img{
+    width: 100%;
+    height: 100%;
+}
+/* ram made changes */
 
   .box{
     display: flex;

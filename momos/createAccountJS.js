@@ -1,4 +1,4 @@
-
+document.querySelector("#newAccount").addEventListener("click",createAccount);
 let form = document.querySelector("form");
 let userData = JSON.parse(localStorage.getItem("userData")) || [];
 form.addEventListener("submit",function(event){
@@ -28,4 +28,8 @@ function checkEmails(email){
     }else{
         return true;
     }
+}
+
+function createAccount(){
+    window.location.href = "createAccount.html";
 }
