@@ -1,0 +1,291 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  /* navbar */
+  .navbar{
+      width: 100%;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px rgb(235, 235, 235);
+    position: sticky;
+    }
+    .nav-img>img{
+    width: 25%;
+    margin: auto;
+    margin-top: 35px;
+    display: block;
+  }
+  /* ram made changes */
+  #look{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,50px);
+    margin-top: 20px;
+  }
+  /* #look > div{
+    border: 1px solid orange;
+  } */
+  #look > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #look > div:nth-child(2) > img{
+    width: 80%;
+    height: 70%;
+  }
+  #look > div:last-child {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 40px;
+  }
+  #look > div:last-child > div{
+    /* border: 1px solid green; */
+    width: 7%;
+    height: 60%;
+  }
+  #look > div:last-child > div >img{
+    width: 100%;
+    height: 100%;
+  }
+  /* ram made changes */
+  
+  
+    .box{
+      display: flex;
+      justify-content: space-evenly;
+    
+    }
+    .box>a>h5{
+      background-color: white;
+      border: transparent;
+      color: #333333;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-weight: lighter;
+      
+    }
+    .box>a>h5:hover{
+      background-color: aqua;
+    }
+    .box>a{
+      text-decoration: none;
+      list-style: none;
+    }
+    .search{
+      width:30%;
+      display: flex;
+      margin: auto;
+      margin-right: 50px;
+     margin-bottom: 20px;
+    }
+    .search>input{
+      border: 1px solid #aaaaaa;
+      padding: 10px;
+      width:180%;
+      
+    }
+    .image>img{
+      width: 20%;
+      margin-right: 25px;
+    }
+    .search>button{
+      background-color: white;
+      border: transparent;
+      cursor: pointer;
+    }
+      /* navbar */
+      #bigSales{
+          display: flex;
+      }
+      #leftSide{
+          /* border: 1px solid red; */
+          width: 20%;
+      }
+      #rightSide{
+          /* border: 1px solid orange; */
+          width: 80%;
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-template-rows: repeat(12,400px);
+          gap: 10px;
+      }
+      /* i was typing # insted of . finally... i found the error */
+      /* .products{
+          border: 1px solid black;
+      } */
+      /* #filter{
+        border: 1px solid black;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      #filter > div{
+        border: 1px solid purple;
+        width: 80%;
+        display: flex;
+      }
+      #filter > div > div:first-child{
+        border: 1px solid orange;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #filter > div > div:nth-child(2){
+        border: 1px solid green;
+        width: 70%;
+      }
+      #filter > div > div:last-child{
+        border: 1px solid pink;
+        width: 20%;
+      } */
+      .products > div:first-child{
+          /* border: 1px dotted teal; */
+          height: 50%;
+          width: 100%;
+          margin-top: 20px;
+          margin-bottom: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .products > div:first-child > img{
+          height: 60%;
+          width: 60%;
+      }
+      .products > div:last-child{
+          text-align: center;
+      }
+      .division{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: repeat((1,20px));
+      }
+      #footer{
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 170px;
+        margin-top: 20px
+      
+      }
+      #footer > div{
+        /* border: 1px solid red; */
+        width: 80%;
+        display: flex;
+        margin: auto;
+        font-size: 12px;
+        justify-content:space-between;
+      }
+      #footer > div > p{
+        margin-right: 10px;
+      }
+      #footer > p{
+        text-align: center;
+        font-size: 14;
+      }
+      .division{
+        display: flex;
+      }
+      #pikachu{
+        padding : 0px 30px;
+        background-color: rgb(51,51,51);
+        color: white;
+        border: none;
+    }
+    #pikachu:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    
+              /* -------Screen responsiveness------- */
+  
+      /* for large */
+      @media all and (min-width:781px) and (max-width:999px){
+  
+        #rightSide{
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(16,400px);
+          gap: 10px;
+        }
+        #cart{
+          margin-right: 20px;
+        }
+      }
+      /* for medium */
+      @media all and (min-width:470px) and (max-width:780px){
+        #rightSide{
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(16,400px);
+          gap: 10px;
+        }
+        #leftSide{
+          display: none;
+        }
+        .box{
+          display:none;
+        }
+        #search{
+          display: none;
+        }
+        #cart{
+          margin-right: 40px;
+        }
+  
+      }
+      /* for small */
+      @media all and (min-width:340px) and (max-width:469px){
+        #rightSide{
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: repeat(24,400px);
+          gap: 10px;
+        }
+        #leftSide{
+          display: none;
+        }
+        .box{
+          display:none;
+        }
+        #search{
+          display: none;
+        }
+        #cart{
+          margin-right: 40px;
+        }
+  
+      }
+  
+      /* for very small screen */
+      @media all and (min-width:40px) and (max-width:339px){
+        #rightSide{
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: repeat(48,400px);
+          gap: 10px;
+        }
+        #leftSide{
+          display: none;
+        }
+        .box{
+          display:none;
+        }
+        #search{
+          display: none;
+        }
+        #cart{
+          margin-right: 40px;
+        }
+      }
+  
