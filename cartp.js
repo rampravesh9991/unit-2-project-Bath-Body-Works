@@ -70,6 +70,7 @@ let myCart = JSON.parse(localStorage.getItem("myCart")) || [];
         totalPrice.innerText = elem.price;
         let removeItem = document.createElement("p");
         removeItem.innerText = "X";
+        removeItem.style.cursor = "pointer";
         removeItem.addEventListener("click",function(){
             dltFromCart(elem,index);
         })

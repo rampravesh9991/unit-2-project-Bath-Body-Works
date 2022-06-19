@@ -82,10 +82,12 @@ data.forEach(function(elem){
     let btnName = document.createElement("h4");
     btnName.innerText = elem.btnName;
     btn.append(btnName);
-    btn.style.backgroundColor = "rgb(51,51,51)";
-    btn.style.padding = "0px 30px";
-    btn.style.color = "white";    
-    btn.style.border = "none";
+    //again inline attributes
+    // btn.style.backgroundColor = "rgb(51,51,51)";
+    // btn.style.padding = "0px 30px";
+    // btn.style.color = "white";    
+    // btn.style.border = "none";
+    btn.setAttribute("id","pikachu");
     box2.append(productName,type,price,btn);
     
     box0.append(box1,box2);

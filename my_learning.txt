@@ -13,7 +13,12 @@ in landing_p1.html while working with data, after doing grid display stuff i got
 12. also learned where to find contributions
 13. most important your codes do not get transfered in main from branch it just update the main with your branch... [NEVER PUSH IN MAIN ONLY MERGE]
 14. i should thankful to my teammates for being lazy, because the thought that they are useless forced me to learn everything by myself. yes they are useful for my betterment 
-
+15. in order to hide div section in media queries~ selector ~ display : none
+16. css property is not working on footer
+17. i still have to work on sliding catagories horizontally or vertivally
+17. i am still not comfortable wit js ~ how to add functionalities? total amount, filter products by catagories, manipulation window and advance css
+19. popup login card on screen
+20. i found out why buton was not changing color on hover property... it's because of specificity... i have attached inline property to button.. that's why it wasn't working form css file
 /* #bigSales > div:first-child{
             border: 1px solid navy;
             width: 20%;
